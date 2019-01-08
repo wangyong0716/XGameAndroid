@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_33_3"
+        android:layout_marginBottom="@dimen/dp_17"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:minHeight="@dimen/dp_79"
+        android:background="@drawable/card_white_10">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp_43_3"
+            android:layout_height="@dimen/dp_43_3"
+            android:layout_marginStart="@dimen/margin_large"
+            android:background="@drawable/default_avatar"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_task_center"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:minHeight="@dimen/dp_79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_task_center"
+                android:background="@drawable/mall_bg"
+                android:layout_marginEnd="@dimen/dp_17_3"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/white_alpha_90"
+                android:text="@string/make_gold_coin"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/task_red_point"
+                android:layout_alignEnd="@id/tv_task_center"
+                android:layout_alignBottom="@id/tv_task_center"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-10dp"
+                android:visibility="invisible"
+                android:src="@drawable/red_point"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toStartOf="@id/rl_task_center"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10_7"
+            android:layout_toEndOf="@id/iv_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_gold_coin"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_3"
+                android:textColor="@color/gold_coin_color"
+                android:layout_below="@id/tv_nick_name"
+                android:textSize="@dimen/sp_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/gold_coin"
+                android:id="@+id/tv_gold_coin_label"
+                android:layout_marginStart="0.67dp"
+                android:layout_alignBaseline="@id/tv_gold_coin"
+                android:layout_toEndOf="@id/tv_gold_coin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/earn_gold_coin"
+                android:layout_marginStart="@dimen/dp_6_3"
+                android:layout_alignBaseline="@id/tv_gold_coin"
+                android:layout_toEndOf="@id/tv_gold_coin_label"
+                android:textColor="@color/link_color"
+                android:textSize="@dimen/sp_13"
+                android:focusable="true"
+                android:drawableEnd="@drawable/icon_right_triangle"
+                android:drawablePadding="@dimen/dp_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab_indicator"
+        android:layout_below="@id/rl_top_layout"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:background="@drawable/tab_bg_bound"
+        android:padding="@dimen/dp_1"
+        android:divider="@drawable/tab_divider"
+        android:showDividers="middle"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/dp_27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tab_battle"
+            android:text="@string/battle"
+            style="@style/home_tab_item" />
+
+        <TextView
+            android:id="@+id/tab_arena"
+            android:text="@string/arena"
+            style="@style/home_tab_item" />
+
+        <TextView
+            android:id="@+id/history"
+            android:text="@string/my_history"
+            style="@style/home_tab_item" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/history_red_point"
+        android:visibility="invisible"
+        android:layout_alignTop="@id/ll_tab_indicator"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="-23dp"
+        android:layout_toEndOf="@id/ll_tab_indicator"
+        android:background="@drawable/red_point"
+        android:maxLength="2"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_8"
+        android:minWidth="@dimen/dp_13"
+        android:minHeight="@dimen/dp_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/dp_3_33"
+        android:layout_below="@id/ll_tab_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/white_alpha_20" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_below="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

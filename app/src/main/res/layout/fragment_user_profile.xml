@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_marginTop="36.67dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/avatar_select"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/color_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/nick_text"
+        style="@style/InputItemStyle"
+        android:layout_marginTop="18dp"
+        android:text="@string/nickname_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+    <EditText
+        android:id="@+id/nick_input"
+        style="@style/RightInputTextStyle"
+        android:background="@null"
+        android:maxLength="20"
+        android:ems="10"
+        android:hint="@string/string_utils_input_nickname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/nick_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nick_text"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="@+id/nick_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nick_text"
+        app:layout_constraintTop_toBottomOf="@+id/nick_text" />
+
+
+    <TextView
+        android:id="@+id/sex_text"
+        style="@style/InputItemStyle"
+        android:text="@string/sex_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"/>
+
+    <TextView
+        android:id="@+id/male"
+        style="@style/InputItemStyle"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"
+        android:text="@string/male_text"
+        android:drawableLeft="@drawable/gender_select"
+        android:textColor="@color/gender_select_color"
+        android:includeFontPadding="false"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/sex_text"
+        app:layout_constraintTop_toTopOf="@+id/sex_text"
+        app:layout_constraintRight_toLeftOf="@+id/female"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <TextView
+        android:id="@+id/female"
+        style="@style/InputItemStyle"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:paddingStart="10dp"
+        android:text="@string/female_text"
+        android:clickable="true"
+        android:drawableLeft="@drawable/gender_select"
+        android:textColor="@color/gender_select_color"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="@+id/sex_text"
+        app:layout_constraintEnd_toEndOf="@+id/nick_input"
+        app:layout_constraintTop_toTopOf="@+id/sex_text"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="@+id/nick_input"
+        app:layout_constraintStart_toStartOf="@+id/sex_text"
+        app:layout_constraintTop_toBottomOf="@+id/sex_text" />
+
+    <TextView
+        android:id="@+id/age_text"
+        style="@style/InputItemStyle"
+        android:text="@string/age_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/age"
+        style="@style/RightInputTextStyle"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/age_input_hint_text"
+        android:gravity="center_vertical|right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/age_text"
+        app:layout_constraintTop_toTopOf="@+id/age_text"
+        />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="@+id/nick_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/age_text"
+        app:layout_constraintTop_toBottomOf="@+id/age_text"
+        />
+
+
+    <TextView
+        android:id="@+id/invite_text"
+        style="@style/InputItemStyle"
+        android:text="@string/invite_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/invite_code"
+        style="@style/RightInputTextStyle"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/invite_input_hint_text"
+        app:layout_constraintBottom_toBottomOf="@+id/invite_text"
+        app:layout_constraintTop_toTopOf="@+id/invite_text"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="@+id/nick_input"
+        app:layout_constraintStart_toStartOf="@+id/invite_text"
+        app:layout_constraintTop_toBottomOf="@+id/invite_text" />
+
+    <ImageView
+        android:id="@+id/go_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93.33dp"
+        android:src="@drawable/go_next_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/update_profile_text"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

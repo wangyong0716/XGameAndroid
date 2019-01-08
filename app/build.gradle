@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+apply plugin: 'walle'
+
+
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "com.baiwan.pk"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 20180211
+        versionName "V1.00"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+
+        manifestPlaceholders = [
+                qq_id: "1106648335"
+        ]
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            // applicationIdSuffix '.debug'
+            minifyEnabled true
+            shrinkResources false
+            useProguard false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets{
+        main{
+//            assets.srcDirs = ['../assets']
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+    splits {
+        density {
+            enable false
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+walle {
+    // 指定渠道包的输出路径
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+    // 定制渠道包的APK的文件名称
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk';
+    // 渠道配置文件
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':social')
+    implementation project(':baserecyclerviewadapterhelper')
+    implementation project(':uisupport')
+    implementation project(':andpermission')
+    implementation project(':bgabanner')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation (name: 'zeus-mario-sdk', ext: 'aar')
+    implementation rootProject.ext.dependencies.appcompatV7
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.meituan.android.walle:library:1.1.6'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'mi-appstore:xiaomi-update-sdk:3.0'
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/invite_divider_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/color_white">
+
+        <EditText
+            android:id="@+id/search_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/clear"
+            android:background="@color/transparent"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableStart="@drawable/search_icon"
+            android:gravity="center_vertical|start"
+            android:hint="@string/invite_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp_16_7"
+            android:paddingRight="@dimen/dp_16_7"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/default_hint_text_color"
+            android:textSize="@dimen/normal_text_size" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/search_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/clear_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|end"
+            android:paddingLeft="@dimen/dp_16_7"
+            android:paddingRight="@dimen/dp_16_7"
+            android:text="@string/search"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/normal_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.3"
+        android:background="@color/invite_divider_gray" />
+
+    <TextView
+        android:id="@+id/search_tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/color_white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableStart="@drawable/search_icon"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="@dimen/dp_16_7"
+        android:paddingRight="@dimen/dp_16_7"
+        android:textColor="@color/default_text"
+        android:textSize="@dimen/normal_text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loading_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh_loading" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_16_7"
+            android:paddingRight="@dimen/dp_16_7"
+            android:text="@string/searching"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

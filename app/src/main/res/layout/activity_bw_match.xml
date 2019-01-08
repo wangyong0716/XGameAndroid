@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bw_battle_bg">
+
+    <TextView
+        android:id="@+id/match_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bw_match_title_margin_top"
+        android:text="@string/match_status_matching"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/match_title_text_size"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/match_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/match_game_margin_top"
+        android:textColor="@color/match_game_color"
+        android:textSize="@dimen/match_game_text_size"/>
+
+    <RelativeLayout
+        android:id="@+id/count_down_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bw_match_count_height"
+        android:layout_below="@id/game_name"
+        android:layout_marginTop="@dimen/bw_match_count_margin_top">
+
+        <com.xgame.ui.view.MatchLoadingView
+            android:id="@+id/loading_view"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:back_color="@color/transparent"
+            app:dot_color="#66ffea00"
+            app:dot_distance="5dip"
+            app:dot_radius="5dip"
+            app:dot_selected_color="#ffffea00"
+            app:gravity="center"
+            app:mode="circulation"/>
+
+        <TextView
+            android:id="@+id/count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/bw_match_count_text_color"
+            android:textSize="@dimen/bw_match_game_text_size"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/match_succeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/match_success"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/match_view"
+        android:layout_width="@dimen/match_layout_width"
+        android:layout_height="@dimen/match_layout_height"
+        android:layout_below="@id/count_down_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bw_match_layout_margin_top"/>
+
+    <ImageView
+        android:id="@+id/game_icon"
+        android:layout_width="100dip"
+        android:layout_height="46.33dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/bw_title"/>
+
+    <TextView
+        android:id="@+id/online_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16.33dp"
+        android:layout_marginTop="17dp"
+        android:text="1002325人在线"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/match_game_text_size"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

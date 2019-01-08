@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <com.xgame.ui.activity.home.view.RefreshLoadLayout
+        android:id="@+id/refresh_load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_toolbar">
+
+        <com.xgame.ui.activity.invite.view.ObservedRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.xgame.ui.activity.home.view.RefreshLoadLayout>
+
+    <include layout="@layout/layout_empty_view" />
+
+</RelativeLayout>

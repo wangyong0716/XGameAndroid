@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/register_phone"
+        style="@style/InputItemStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64.33dp"
+        android:text="@string/register_by_phone"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        style="@style/InputItemStyle"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/input_phone_number"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:lines="1"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_phone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginEnd="@dimen/dp_46_67"
+        android:layout_marginStart="@dimen/dp_46_67"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+    <EditText
+        android:id="@+id/input_verification"
+        style="@style/InputItemStyle"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/input_verification_code"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:maxLength="6"
+        android:lines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/get_verification"
+        style="@style/InputItemStyle"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/get_verification_text"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:text="@string/get_verification_code"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/input_verification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/input_verification"
+        app:layout_constraintTop_toTopOf="@+id/input_verification"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginEnd="@dimen/dp_46_67"
+        android:layout_marginStart="@dimen/dp_46_67"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_verification" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/InputItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="39.33dp"
+        android:layout_marginTop="33.33dp"
+        android:textColor="@color/login_text"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="@string/login"
+        android:background="@drawable/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/third_app_accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94.33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="18dp"
+        android:includeFontPadding="false"
+        android:drawableLeft="@drawable/privacy_btn"
+        android:drawablePadding="@dimen/dp_6"
+        android:textColor="@color/color_7f000000"
+        android:textSize="@dimen/sp_10"
+        android:text="@string/privacy_agree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

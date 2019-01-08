@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="313.33dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dip"
+        android:background="@drawable/dialog_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/revive_background"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28.67dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19.33dip"
+            android:gravity="center"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp_16"/>
+
+
+        <ImageView
+            android:id="@+id/heart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19.33dip"
+            android:src="@drawable/revive_heart"/>
+
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="166.67dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/heart_icon"
+            android:background="@drawable/positive_btn_bg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dip"/>
+    </RelativeLayout>
+</LinearLayout>

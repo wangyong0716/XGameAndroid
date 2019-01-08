@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bw_battle_bg_before">
+
+    <FrameLayout
+        android:id="@+id/fra_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/view_title"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bw_title"/>
+
+    <TextView
+        android:id="@+id/txt_online_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:text="@string/bw_battle_count_down"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_title"
+        android:text="坚持跑酷三分钟不死，平分10万！"
+        android:textColor="#b2ffffff"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

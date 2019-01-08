@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gap_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/toolbar_bg"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/personal_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:background="@drawable/default_avatar"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/avatar"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/baiwan_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/px_1"
+            android:layout_height="@dimen/dp_25"
+            android:layout_below="@id/baiwan_id"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/coin_item"
+            style="@style/personal_header_item"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/divider"
+            >
+
+            <TextView
+                style="@style/personal_header_item_name"
+                android:text="@string/personal_coin"
+                />
+
+            <TextView
+                android:id="@+id/coin_value"
+                style="@style/personal_header_item_value"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/coin_link"
+                style="@style/personal_header_item_link"
+                android:text="@string/personal_exchange"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cash_item"
+            style="@style/personal_header_item"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/divider"
+            >
+
+            <TextView
+                style="@style/personal_header_item_name"
+                android:text="@string/personal_cash"
+                />
+
+            <TextView
+                android:id="@+id/cash_value"
+                style="@style/personal_header_item_value"
+                android:textColor="@color/yellow"
+                />
+
+            <TextView
+                android:id="@+id/cash_link"
+                style="@style/personal_header_item_link"
+                android:text="@string/personal_withdraw"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <include
+                layout="@layout/personal_list_gap"
+                android:id="@+id/banner_gap"
+                android:visibility="gone"
+                />
+            <include
+                layout="@layout/personal_list_2line_item"
+                android:id="@+id/item_banner"
+                android:visibility="gone"
+                />
+            <include layout="@layout/personal_list_gap" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_input_code"
+                />
+            <include layout="@layout/personal_list_gap" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_task"
+                />
+            <include layout="@layout/personal_list_divider" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_mall"
+                />
+            <include layout="@layout/personal_list_divider" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_bill"
+                />
+            <include layout="@layout/personal_list_gap" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_faq"
+                />
+            <include layout="@layout/personal_list_divider" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_feedback"
+                />
+            <include layout="@layout/personal_list_gap" />
+            <include
+                layout="@layout/personal_list_item"
+                android:id="@+id/item_upgrade"
+                />
+            <include layout="@layout/personal_list_gap" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

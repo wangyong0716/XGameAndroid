@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_marginBottom="@dimen/dp_13"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginEnd="@dimen/dp_18"
+        android:dividerHeight="@dimen/px_1"
+        android:divider="@color/black_alpha_30"
+        android:scrollbars="none"
+        />
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/empty_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/empty_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/black_alpha_80"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

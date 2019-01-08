@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/share_print_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/result_layout"
+        android:layout_width="@dimen/match_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bw_battle_pass_layout_margin_top"
+        android:background="@drawable/round_white_rectangle_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bw_win_colorful_background"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="87.67dip"
+            android:layout_height="87.67dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50.67dip"
+            android:background="@drawable/avatar_circle_background"
+            android:padding="@dimen/bw_battle_avatar_ring_width"
+            android:src="@drawable/avatar_matching_default"
+            app:civ_border_color="#80fcc211"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dip"/>
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dip"
+            android:text="@string/bw_congratulations"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/bonus_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dip"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bw_coin_pre"
+                android:textColor="@color/color_black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/result_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dip"
+                android:paddingEnd="3dip"
+                android:textColor="@color/bw_bonus_color"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bw_coin_post"
+                android:textColor="@color/color_black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bonus_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="@string/bw_cache_charge"
+            android:textColor="@color/black_alpha_50"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/share_btn"
+            android:layout_width="206.67dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/result_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29.67dip"
+            android:background="@drawable/battle_share_btn_background"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/my_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="31dip"
+            android:layout_marginTop="20.67dip"
+            android:gravity="center"
+            android:text="@string/bw_my_account"
+            android:textColor="#ff4a0cc6"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</RelativeLayout>

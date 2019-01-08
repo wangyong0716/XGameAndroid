@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_cropper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/crop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:textColor="@color/white_alpha_70"
+        android:text="@string/crop_title_text"
+        android:gravity="center"/>
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56.66dp"
+        android:background="@color/color_black"
+        android:paddingLeft="@dimen/dp_26"
+        android:paddingRight="@dimen/dp_26">
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/PersonalCropperTextViewStyle"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:text="@string/cancel_text" />
+
+        <ImageView
+            android:id="@+id/rotate_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rotate_img"
+            android:visibility="visible"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/sure"
+            style="@style/PersonalCropperTextViewStyle"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_white"
+            android:clickable="true"
+            android:text="@string/sure_text" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

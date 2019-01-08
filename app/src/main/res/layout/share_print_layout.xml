@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_layout"
+    android:layout_width="360dp"
+    android:layout_height="640dp"
+    android:visibility="invisible">
+
+    <ImageView
+        android:id="@+id/share_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_bg" />
+
+    <LinearLayout
+        android:id="@+id/share_content"
+        android:layout_width="274.33dp"
+        android:layout_height="165.33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/round_white_rectangle_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="#201551"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/share_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FA0D1E"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/share_avatar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/share_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp">
+
+        <com.miui.zeus.mario.sdk.ui.CircleImageView
+            android:id="@+id/avatar_border"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@color/color_white" />
+
+        <com.miui.zeus.mario.sdk.ui.CircleImageView
+            android:id="@+id/share_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/share_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/qr_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qr_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/qr_code_text"
+        android:textColor="@color/white_alpha_80"
+        android:textSize="13sp" />
+
+</RelativeLayout>

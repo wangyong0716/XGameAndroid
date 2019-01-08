@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/top_gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_13_3"
+        android:background="@color/invite_divider_gray" />
+
+    <TextView
+        android:id="@+id/search_editor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/top_gap"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@drawable/search_icon"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="@dimen/dp_16_7"
+        android:paddingRight="@dimen/dp_16_7"
+        android:text="@string/invite_search_hint"
+        android:textColor="@color/default_hint_text_color"
+        android:textSize="@dimen/normal_text_size" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/search_editor"
+        android:background="@color/invite_divider_gray"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_16_7"
+        android:paddingRight="@dimen/dp_16_7"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/small_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/match_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@id/tips">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:text="@string/contacts_title"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/match_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_toStartOf="@+id/match_arrow"
+            android:drawablePadding="@dimen/dp_3"
+            android:textColor="@color/invite_match_text_blue"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/match_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_27"
+            android:src="@drawable/arrow_blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/invite_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/match_layout"
+        android:background="@color/invite_divider_gray"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="@dimen/dp_16_7"
+        android:paddingRight="@dimen/dp_16_7"
+        android:text="@string/invite_label"
+        android:textColor="@color/default_text"
+        android:textSize="@dimen/small_text_size" />
+
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_label"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_9"
+        android:paddingTop="@dimen/dp_16_3">
+
+        <include layout="@layout/layout_share" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@+id/invite_layout"
+        android:background="@color/invite_divider_gray"
+        android:gravity="bottom|start"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_16_7"
+        android:paddingRight="@dimen/dp_16_7"
+        android:text="@string/invite_list_label"
+        android:textColor="@color/default_text"
+        android:textSize="@dimen/small_text_size" />
+
+    <include
+        layout="@layout/layout_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_label" />
+
+</RelativeLayout>

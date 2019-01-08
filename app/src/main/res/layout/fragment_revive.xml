@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lose_layout"
+        android:layout_width="313.33dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dip"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47.67dip"
+            android:gravity="center"
+            android:text="@string/bw_lose"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp_16"/>
+
+        <Button
+            android:id="@+id/lose_btn"
+            android:layout_width="116.67dp"
+            android:layout_height="40dp"
+            android:background="@drawable/positive_btn_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/battle_error_return"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/revive_layout"
+        android:layout_width="313.33dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dip"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="28.67dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19.33dip"
+
+            android:gravity="center"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40.33dip"
+            android:drawablePadding="2dip"
+            android:drawableStart="@drawable/revive_coin"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_negative"
+                android:layout_width="116.67dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="33.33dp"
+                android:background="@drawable/negative_btn_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btn_positive"
+                android:layout_width="116.67dp"
+                android:layout_height="40dp"
+                android:background="@drawable/positive_btn_red_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

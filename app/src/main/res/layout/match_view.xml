@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xgame.ui.view.MatchView
+    android:id="@+id/match_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_white_rectangle_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/player_1"
+        android:layout_width="110dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingEnd="8dip"
+        android:paddingStart="38dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_1"
+            android:layout_width="@dimen/match_avatar_size"
+            android:layout_height="@dimen/match_avatar_size"
+            android:layout_marginTop="@dimen/match_avatar_margin_top"
+            android:src="@drawable/avatar_matching_default"/>
+
+        <TextView
+            android:id="@+id/name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/match_name_margin_top"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/match_name_color"
+            android:textSize="@dimen/match_name_text_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/gender_age_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/match_age_margin_top"
+            android:maxLines="1"
+            android:textColor="@color/match_age_color"
+            android:textSize="@dimen/match_age_text_size"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/vs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/match_vs_margin_top">
+
+        <ImageView
+            android:id="@+id/vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vs"/>
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dip"
+            android:paddingEnd="5dip"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/result_score_color"
+            android:textSize="@dimen/result_score_size"
+            android:text="@string/result_colon"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/colon"
+            android:textColor="@color/result_score_color"
+            android:textSize="@dimen/result_score_size"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/colon"
+            android:textColor="@color/result_score_color"
+            android:textSize="@dimen/result_score_size"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/player_2"
+        android:layout_width="110dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingEnd="38dip"
+        android:paddingStart="8dip">
+
+        <RelativeLayout
+            android:id="@+id/avatar2_layout"
+            android:layout_width="@dimen/match_avatar_size"
+            android:layout_height="@dimen/match_avatar_size"
+            android:layout_marginTop="@dimen/match_avatar_margin_top">
+
+            <com.xgame.ui.view.MatchLoadingView
+                android:id="@+id/loading_view"
+                android:layout_width="@dimen/match_avatar_size"
+                android:layout_height="@dimen/match_avatar_size"
+                android:visibility="gone"
+                app:back_color="@color/black_alpha_10"
+                app:dot_color="@color/black_alpha_10"
+                app:dot_distance="4dip"
+                app:dot_radius="4dip"
+                app:dot_selected_color="@color/black_alpha_20"
+                app:gravity="center"
+                app:mode="iteration"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_2"
+                android:layout_width="@dimen/match_avatar_size"
+                android:layout_height="@dimen/match_avatar_size"
+                android:src="@drawable/avatar_matching_default"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/match_name_margin_top"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/match_name_color"
+            android:textSize="@dimen/match_name_text_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/gender_age_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/match_age_margin_top"
+            android:maxLines="1"
+            android:textColor="@color/match_age_color"
+            android:textSize="@dimen/match_age_text_size"/>
+    </LinearLayout>
+</com.xgame.ui.view.MatchView>

@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">百万对战</string>
+
+    <string name="battle_back_title">确定退出游戏吗？</string>
+    <string name="battle_back_yes">确定</string>
+    <string name="battle_back_no">取消</string>
+
+    <string name="battle_back_title_coin">确认退出？退出后将损失入场金币。</string>
+    <string name="battle_back_title_bw">确认退出？退出后将失去平分大奖的机会。</string>
+
+    <!--登录-->
+    <string name="register_by_phone">手机号登录</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="login">登录</string>
+    <string name="login_failed">登录失败</string>
+    <string name="logining_text">正在登录</string>
+    <string name="uploading_text">正在提交资料</string>
+    <string name="uploading_failed_text">资料提交失败，请重试</string>
+    <string name="uploading_success_text">资料修改成功</string>
+    <string name="upload_avatar_failed">头像有问题，请重新选择</string>
+    <string name="binding_text">正在绑定</string>
+    <string name="bind_failed">绑定失败</string>
+
+    <string name="privacy_agree">已同意用户协议</string>
+    <string name="privacy_title">用户协议</string>
+
+    <string name="save_text">保存</string>
+    <string name="age_text">年龄</string>
+    <string name="age_input_hint_text">设置年龄</string>
+    <string name="submit_text">提交</string>
+    <string name="photo_text">头像</string>
+    <string name="nickname_text">昵称</string>
+    <string name="sex_text">性别</string>
+    <string name="male_text">男</string>
+    <string name="female_text">女</string>
+    <string name="invite_text">我的邀请码</string>
+    <string name="invite_input_hint_text">填写送金币</string>
+    <string name="birthday_single_text">生日</string>
+    <string name="birthday_text">出生日期</string>
+    <string name="send_again_text">重新发送</string>
+    <string name="can_send_again_text">s后可重发</string>
+    <string name="verification_code_error_text">验证码错误,请重新输入。</string>
+    <string name="toast_virification_code_sended_text">验证码已发送,请注意查收</string>
+    <string name="toast_virification_code_send_fail_text">验证码发送失败,请重试</string>
+    <string name="update_profile_text">选择性别和生日将更准确的为你推荐对手</string>
+    <string name="app_not_installed">尚未安装该应用</string>
+
+    <string name="starting_text">正在启动</string>
+
+    <string name="net_error_text">网络错误</string>
+
+    <string name="string_utils_input_nickname">请填写昵称</string>
+    <string name="string_utils_input_right_nickname">哎呀,请输入字母、数字、下划线组成的昵称哦~</string>
+    <string name="string_utils_choose_sex">请选择性别</string>
+    <string name="string_utils_input_phone_num">请输入手机号</string>
+    <string name="string_utils_input_right_phone_num">请输入正确的11位手机号</string>
+    <string name="string_utils_input_verification_code">请输入验证码</string>
+    <string name="string_utils_input_six_verification_code">请输入6位数字验证码</string>
+    <string name="string_utils_input_password">请输入密码</string>
+    <string name="string_utils_input_right_password">6-12位数字、字母或组合密码</string>
+    <string name="string_utils_input_right_combination_password">设置6-12位数字、字母或组合密码</string>
+    <string name="string_utils_choose_photo">请选择头像</string>
+    <string name="string_utils_choose_birthday">请选择年龄</string>
+
+    <string name="guide_skip">跳过</string>
+    <string name="guide_enter">马上体验</string>
+    <string name="token_invalid_and_relogin">账号信息失效，请重新登录</string>
+    <string name="token_login_on_another_device">该账号已在其他设备登录</string>
+    <string name="account_forbid">账号被封，请联系客服</string>
+
+    <string name="register_dialog_title">登录成功</string>
+    <string name="register_dialog_message">获得新手奖励金币</string>
+    <string name="register_dialog_button">领取金币</string>​
+
+    <!--权限-->
+    <string name="title_dialog">提示</string>
+    <string name="message_permission_failed">拒绝授予权限会导致游戏不可用，请授予我们</string>
+    <string name="grant_permission_on_setting">拒绝授予权限会导致游戏不可用，请到设置中授予权限</string>
+    <string name="grant_permission_start">请开启</string>
+    <string name="grant_permission_read_phone">"\"电话权限\""</string>
+    <string name="grant_permission_write_storage">"\"存储权限\""</string>
+    <string name="grant_permission_end">已确保您的账号登录安全及信息安全</string>
+    <string name="go_setting">去设置</string>
+
+    <!--图片选取-->
+    <string name="sure_text">确定</string>
+    <string name="cancel_text">取消</string>
+    <string name="crop_title_text">移动和缩放</string>
+
+
+    <string name="age_unit_text">岁</string>
+
+    <string name="bw_battle_tittle">百万对战</string>
+    <string name="bw_battle_rule">20秒了解规则</string>
+    <string name="bw_battle_rule_title">游戏规则</string>
+    <string name="bw_battle_try">试玩</string>
+    <string name="bw_battle_time">时间</string>
+    <string name="bw_battle_bonus">奖金</string>
+    <string name="bw_battle_money">累计金额/元</string>
+    <string name="bw_battle_cash">可提现：</string>
+    <string name="bw_battle_open_alarm">开播提醒</string>
+    <string name="bw_battle_invite">邀请好友</string>
+    <string name="bw_battle_rmb">￥</string>
+    <string name="bw_battle_rmb_default">0</string>
+    <string name="bw_battle_w">万</string>
+    <string name="bw_battle_enter">进入游戏</string>
+    <string name="bw_battle_start_soon">游戏马上开始</string>
+    <string name="bw_battle_online_num">%d人在线</string>
+    <string name="bw_battle_count_down_0">00:00</string>
+    <string name="bw_battle_count_down">倒计时</string>
+    <string name="bw_battle_start_time_default">00:00</string>
+    <string name="bw_battle_bonus_default">10万</string>
+    <string name="bw_battle_door_closed">你已错过本轮游戏，下轮记得按时参加哦～</string>
+    <string name="bw_battle_door_closed_home">回到大厅</string>
+    <string name="bw_battle_door_closed_alarm">开启通知</string>
+    <string name="bw_battle_fail_common">网络连接出现问题，请稍后再试</string>
+    <string name="bw_battle_fail_common_yes">确定</string>
+    <string name="bw_battle_loading">加载中...</string>
+    <string name="bw_battle_des_rule">了解规则，轻松到手百万现金</string>
+    <string name="bw_battle_ask_if_play_video">当前为移动网络会消耗流量，返回大厅将错过现金大奖</string>
+    <string name="bw_battle_goon_play">继续参与</string>
+    <string name="bw_battle_not_goon_play">返回大厅</string>
+
+    <string name="mobile_num">手机号</string>
+    <string name="to_binding">去绑定</string>
+    <string name="had_bind">已绑定 %s</string>
+    <string name="wechat">微信</string>
+    <string name="qq">QQ</string>
+    <string name="weibo">微博</string>
+    <string name="bind_account">账号绑定</string>
+    <string name="unbinding_mobile_warning">绑定手机，提升账号安全</string>
+    <string name="binding">立刻绑定 ></string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="msg_remind">消息提醒</string>
+    <string name="push_off_warning">建议开启，不错过每一场百万游戏</string>
+    <string name="about_us">关于我们</string>
+    <string name="login_exit">更换账号</string>
+    <string name="setting">设置</string>
+
+    <string name="cropper_error_toast">无效的图片路径</string>
+
+    <string name="vs" translatable="false">VS</string>
+    <string name="match_status_matching">正在匹配</string>
+    <string name="match_status_matched">匹配成功</string>
+    <string name="match_on_matching">匹配中</string>
+    <string name="match_waiting">预计等待5s ...</string>
+    <string name="match_age">%d岁</string>
+    <string name="match_tips_network">连接WIFI体验更佳呦～</string>
+
+    <string name="result_title_win">恭喜获得胜利</string>
+    <string name="result_title_inviting">已发送邀请</string>
+    <string name="result_title_invited">对方邀请你再战一局</string>
+    <string name="result_btn_waiting">等待对方接受邀请(%ds)</string>
+    <string name="result_btn_accepting">接受邀请(%ds)</string>
+    <string name="result_title_changing">对方想换个游戏</string>
+    <string name="result_btn_changing">对方想换个游戏(%ds)</string>
+    <string name="result_title_lose">对战失败</string>
+    <string name="result_title_dogfall">平局</string>
+    <string name="play_again">再来一局</string>
+    <string name="change_peer">换个对手</string>
+    <string name="change_game">换个游戏</string>
+    <string name="change_peer_left">对手已离开</string>
+    <string name="share_for_coin">赚取金币</string>
+    <string name="back_home">返回游戏大厅</string>
+    <string name="battle_again">我要翻盘(%ds)</string>
+    <string name="coin_battle_title_win">大吉大利，今晚吃鸡</string>
+    <string name="coin_battle_title_lose">差一点点就赢了</string>
+    <string name="coin_play_again">趁热再来一局(%ds)</string>
+    <string name="coin_battle_fee">参加费用%d金币</string>
+    <string name="coin_battle_award">最高奖励%d金币</string>
+    <string name="coin_battle_result">大吉大利，今晚吃鸡</string>
+    <string name="coin_result_win">狂赚%d金币</string>
+    <string name="coin_result_lose">损失%d金币</string>
+    <string name="coin_detail_choose_item">选择挑战项目</string>
+    <string name="coin_detail_read_rule">阅读游戏规则></string>
+    <string name="join_now">立即参加</string>
+
+    <string name="result_win_prompt1">略略略，服不服</string>
+    <string name="result_win_prompt2">哈哈哈，我赢了</string>
+    <string name="result_win_prompt3">承让了，老铁</string>
+    <string name="result_lose_prompt1">唉，没发挥好</string>
+    <string name="result_lose_prompt2">老铁不要得意</string>
+    <string name="result_consecutive_win_prompt">连胜五局有惊喜</string>
+    <string name="result_colon">:</string>
+    <string name="battle">真人对战</string>
+    <string name="arena">金币场</string>
+    <string name="my_history">我的对战</string>
+    <string name="gold_coin">金币</string>
+    <string name="make_gold_coin">赚金币</string>
+
+    <!--分享-->
+    <string name="invite_search_hint">搜索手机号、百万号</string>
+    <string name="invite_tips">我的百万号: %d</string>
+    <string name="invite_title">添加好友</string>
+    <string name="search">搜索</string>
+    <string name="searching">搜索中…</string>
+    <string name="search_tips">搜索：%s</string>
+    <string name="contacts_title">手机通讯录好友</string>
+    <string name="contacts_matching">匹配中…</string>
+    <string name="match_result">%d位朋友</string>
+    <string name="arrow_text">">"</string>
+    <string name="invite_label">邀请朋友</string>
+    <string name="invite_list_label">新朋友</string>
+    <string name="share_title">最火小游戏！瓜分百万现金，还能认识美女领iphone</string>
+    <string name="share_summary">超刺激小游戏，天天瓜分现金，赚金币，领iphone！</string>
+    <string name="share_link">"https://api.chufengnet.com/act/xgame-share"</string>
+
+    <string name="stranger_title">最近匹配的人</string>
+    <string name="search_title">搜索到的人</string>
+    <string name="age_format">%d岁</string>
+    <string name="game_title">常玩的游戏</string>
+    <string name="add_friend">+ 添加好友</string>
+    <string name="add_new_friend">添加好友</string>
+    <string name="wait_friend">等待验证</string>
+    <string name="active_friend">已添加</string>
+    <string name="wait_confirm">通过验证</string>
+    <string name="blacklist">黑名单</string>
+    <string name="myself">我自己</string>
+    <string name="delete_dialog_title">删除好友</string>
+    <string name="delete_dialog_message">确认要删除好友吗？</string>
+    <string name="no_search_result">未搜到用户: %s</string>
+    <string name="empty_data">什么都没有-.-</string>
+    <string name="share_text_format">%s\n下载百万对战，输入邀请码，和我一起瓜分百万现金</string>
+    <string name="qr_code_text">扫描二维码，或在应用商店下载“百万对战”</string>
+    <string name="share_preparing">分享准备中…</string>
+    <string name="share_to">分享至：</string>
+
+    <string name="clear_cache_warning">确定清缓存吗？\n所有游戏的缓存数据将被清空哦～</string>
+    <string name="exit_login_tip">您确认更换账号吗？</string>
+    <string name="about_us_app_desc">玩游戏，赢百万现金</string>
+    <string name="about_us_user_agreement"><u>《用户协议使用条款和隐私协议》</u></string>
+    <string name="no_cache_to_clean">缓存已经清理干净</string>
+    <string name="load_fail_refresh_again">加载失败,请稍后重试</string>
+    <string name="recent_play_stranger">最近约战的陌生人</string>
+    <string name="yesterday">昨天</string>
+    <string name="already_the_newest_data">已经是最新的数据</string>
+    <string name="please_relogin">用户账号异常，请重新登录</string>
+    <string name="no_update">当前为最新版本</string>
+    <string name="local_check_error">获取本地安装应用信息失败</string>
+    <string name="quit_toast">再按一次退出</string>
+
+    <string name="yuan">元</string>
+    <string name="personal_center">个人首页</string>
+    <string name="personal_baiwan_id" formatted="false">百万号：%d</string>
+    <string name="personal_coin">我的金币</string>
+    <string name="personal_cash">奖金</string>
+    <string name="personal_exchange"><u>兑大奖</u></string>
+    <string name="personal_withdraw"><u>去提现</u></string>
+    <string name="personal_item_recommend">推荐好友使用，领取10000收徒金币</string>
+    <string name="personal_item_task">金币任务</string>
+    <string name="personal_item_task_default_info">做任务赚金币</string>
+    <string name="personal_item_input_code">填写师父的邀请码</string>
+    <string name="personal_item_mall">金币商城</string>
+    <string name="personal_item_bill">金币/现金明细</string>
+    <string name="personal_item_faq">常见问题</string>
+    <string name="personal_item_feedback">意见反馈</string>
+    <string name="personal_item_upgrade">版本更新</string>
+    <string name="personal_detail_title">完善资料</string>
+    <string name="personal_cash_bill">现金明细</string>
+    <string name="cash">现金</string>
+    <string name="personal_new_version">发现新版本</string>
+    <string name="personal_latest_version">已是最新版</string>
+    <string name="gender_select">性别选择</string>
+    <string name="external_file_null">无法保存文件</string>
+    <string name="no_bill" formatted="false">暂无明细，赶紧获取更多%s吧~</string>
+    <string name="disclaimer">系统只保留最近三天的收入明细</string>
+    <string name="btn_get_coin">获取现金</string>
+    <string name="get_coin"><u>获取金币</u>&#062;</string>
+    <string name="get_cash_detail"><u>查看提现明细</u>&#062;</string>
+    <string name="get_cash_detail_title">提现明细</string>
+    <string name="will_withdraw">我要提现</string>
+    <string name="nickname_hint">请输入你的昵称</string>
+    <string name="feedback_title">反馈意见</string>
+    <string name="feedback_hint">请输入你的意见或建议</string>
+    <string name="feedback_empty">你还没有输入反馈意见</string>
+    <string name="contact_title">联系方式</string>
+    <string name="contact_hint">请留下你的联系方式</string>
+    <string name="contact_empty">未填写联系方式</string>
+    <string name="feedback_posted">反馈意见已提交</string>
+    <string name="feedback_post_fail_format" formatted="false">反馈意见提交失败： %d，%s</string>
+    <string name="feedback_post_fail">网络故障，反馈意见提交失败</string>
+    <string name="collect_gold_coin">领取金币</string>
+    <string name="server_fail_click_refresh">服务器小哥说你慢点，稍后点我有惊喜</string>
+
+    <!-- 约战 -->
+    <string name="chat_invite_game_hint">发起对战</string>
+    <string name="chat_invite_cancel">约战已失效</string>
+    <string name="chat_invite_one_more">再来一局</string>
+    <string name="chat_invite_accept">接受挑战</string>
+    <string name="chat_invite_waiting_for_accept">等待对方接受邀请...</string>
+    <string name="chat_invite_waiting_for_game">等待进入游戏...</string>
+    <string name="chat_game_result_win">胜 利</string>
+    <string name="chat_game_result_draw">平 局</string>
+    <string name="chat_game_result_lose">失 败</string>
+    <string name="chat_date_format_today">HH:mm</string>
+    <string name="chat_date_format_yesterday">昨天 HH:mm</string>
+    <string name="chat_date_format_the_day_before_yesterday">前天 HH:mm</string>
+    <string name="chat_date_format_this_year">M月d日 HH:mm</string>
+    <string name="chat_date_format_other_year">yy年M月d日 HH:mm</string>
+    <string name="chat_hint_no_network">当前没有网络连接，请检查网络设置</string>
+    <string name="chat_hint_error_common">请求失败，请重试</string>
+    <string name="chat_hint_temp_session_closed">对方已退出，添加好友再约战吧</string>
+    <string name="chat_hint_become_friend">添加好友成功</string>
+    <string name="chat_hint_add_friend">+ 好友</string>
+    <string name="chat_hint_add_friend_wait">待验证</string>
+    <string name="chat_hint_add_friend_send">申请已发送，请等待对方验证</string>
+    <string name="chat_game_default_name">游戏</string>
+    <string name="chat_stranger_info">%s · %d岁</string>
+    <string name="chat_game_picker_no_data_hint">网络开小差了 稍后再试试...</string>
+
+    <string name="gold_coin_info_load_fail">金币获取失败,请稍后重试</string>
+    <string name="loading_progress">"加载中 %1s％"</string>
+    <string name="msg_invite_cancel">[约战已取消]</string>
+    <string name="msg_invite_reject">[对方拒绝约战]</string>
+    <string name="msg_win">[胜利]</string>
+    <string name="msg_lose">[失败]</string>
+    <string name="msg_draw">[平局]</string>
+    <string name="msg_invite_ing">[发起约战]</string>
+    <string name="msg_friend_pass">我们是好友了,来约战吧!</string>
+
+    <string name="match_wrong_game">进入游戏失败!</string>
+    <string name="match_coin_lack">金币不足！</string>
+    <string name="match_fail">匹配失败！</string>
+    <string name="match_overtime">匹配超时！</string>
+    <string name="game_get_fail">获取游戏失败！</string>
+    <string name="double_award">双倍奖励</string>
+    <string name="earn_gold_coin">兑大奖</string>
+
+    <string name="bw_revive_title">立刻购买复活机会</string>
+    <string name="bw_revive_coin">%d金币</string>
+    <string name="bw_revive_negative">下次吧</string>
+    <string name="bw_revive_positive">购买(%ds)</string>
+    <string name="bw_revive_buy">购买</string>
+    <string name="bw_revive_success">恭喜复活成功</string>
+    <string name="bw_revive_count_limitation">复活次数已达上限！</string>
+    <string name="bw_revive_round_limitation">本轮游戏不能使用复活卡！</string>
+    <string name="bw_game_positive">继续游戏(%ds)</string>
+    <string name="bw_game_continue">继续游戏</string>
+    <string name="bw_game_match_sign">...</string>
+
+    <string name="battle_error">服务器开小差了...</string>
+    <string name="battle_error_return">返回大厅</string>
+    <string name="bw_round_congratulations">恭喜进入下一轮</string>
+    <string name="bw_round_waiting_prompt">请等待其他玩家结束 ...</string>
+    <string name="bw_round_win">闯关成功</string>
+    <string name="bw_round_win_prompt">请等待其他玩家结束后确认\n最终金额！</string>
+    <string name="bw_lose">游戏结束，下次再战</string>
+    <string name="bw_revive_fail">复活失败</string>
+    <string name="bw_bonus_compute">金额计算中</string>
+    <string name="bw_bonus_delay_prompt">现金将在48小时打入账户</string>
+
+    <string name="bw_interval_round">%d/%d 局 共有%d人参与</string>
+    <string name="bw_congratulations">恭喜你！</string>
+    <string name="bw_coin_pre">恭喜获得</string>
+    <string name="bw_coin_post">现金奖励</string>
+    <string name="bw_cache_charge">现金2小时内打入账户</string>
+    <string name="bw_my_account">我的钱包</string>
+    <string name="money_format">￥#,###.##</string>
+    <string name="bw_request_bonus_failed">获取奖金失败！</string>
+
+    <string name="server_error">服务器错误</string>
+    <string name="match_no_peer">网络状况差！</string>
+</resources>

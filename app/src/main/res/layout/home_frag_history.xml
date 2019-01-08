@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/card_white_10"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.xgame.ui.activity.home.HistoryFragment"
+        tools:ignore="UselessParent">
+
+
+        <FrameLayout
+            android:id="@+id/fl_add_friend"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36_6">
+
+            <ImageView
+                android:src="@drawable/bg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:drawablePadding="@dimen/dp_6_7"
+                android:text="@string/add_new_friend"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/icon_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/friend_red_point"
+                android:visibility="invisible"
+                android:layout_marginStart="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:src="@drawable/red_point"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.3"
+            android:background="@color/black_alpha_15" />
+
+        <FrameLayout
+            android:id="@+id/fl_group"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_63">
+
+            <View
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp_13"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0.3"
+                android:background="@color/black_alpha_15" />
+
+            <ImageView
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/icon_group"
+                android:maxWidth="@dimen/dp_38"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/black"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/dp_48"
+                android:text="@string/recent_play_stranger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/icon_more_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xgame.ui.activity.home.view.RefreshLoadLayout
+                android:id="@+id/refresh_load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/grid_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.xgame.ui.activity.home.view.RefreshLoadLayout>
+
+            <ViewStub
+                android:id="@+id/vs_alert_layout"
+                android:inflatedId="@+id/alert_layout"
+                android:layout="@layout/home_layout_alert_view"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="@dimen/match_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bw_battle_pass_layout_margin_top"
+        android:background="@drawable/round_white_rectangle_background"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="87.67dip"
+            android:layout_height="87.67dip"
+            android:layout_marginTop="50.67dip"
+            android:background="@drawable/avatar_circle_background"
+            android:padding="@dimen/bw_battle_avatar_ring_width"
+            android:src="@drawable/avatar_matching_default"
+            app:civ_border_color="#80fcc211"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dip"/>
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dip"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/result_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/black_alpha_50"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <com.xgame.ui.view.BattleProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/bw_progress_bar_width"
+            android:layout_height="@dimen/bw_progress_bar_height"
+            android:layout_marginBottom="56.67dip"
+            android:layout_marginTop="46.33dip"
+            app:background_color="@color/bw_progress_background_color"
+            app:foreground_color="@color/bw_progress_foreground_color"/>
+    </LinearLayout>
+</LinearLayout>

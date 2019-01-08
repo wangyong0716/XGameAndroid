@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="lauch_fail" formatted="false">无法打开页面：%s</string>
+</resources>

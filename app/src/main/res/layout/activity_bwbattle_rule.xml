@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bw_battle_bg_before">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18.33dp">
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="46.33dp"
+            android:layout_height="46.33dp"
+            android:src="@drawable/bw_battle_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_back"
+            android:layout_centerVertical="true"
+            android:text="@string/bw_battle_rule_title"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:layout_alignBaseline="@id/ic_back"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view_title"
+        android:layout_width="100dp"
+        android:layout_height="46.33dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bw_title"/>
+
+    <FrameLayout
+        android:id="@+id/rel_video"
+        android:layout_width="334dp"
+        android:layout_height="204dp"
+        android:background="@drawable/bw_battle_rule_play_bg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:padding="2dp">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_battle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:includeFontPadding="false"
+        android:textSize="20sp"
+        android:layout_below="@id/rel_video"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"/>
+
+    <TextView
+        android:id="@+id/txt_battle_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b2ffffff"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        android:layout_below="@id/txt_battle_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/view_line_middle"
+        android:layout_below="@id/txt_battle_des"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="2dp"
+        android:layout_height="17dp"
+        android:background="#80f2f2f2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_battle_des"
+        android:layout_toLeftOf="@id/view_line_middle"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="45dp">
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/bw_battle_time"
+            android:includeFontPadding="false"
+            android:textColor="#80ffffff"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_time"
+            android:includeFontPadding="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_battle_des"
+        android:layout_toRightOf="@id/view_line_middle"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="45dp">
+
+        <TextView
+            android:id="@+id/txt_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/bw_battle_bonus"
+            android:includeFontPadding="false"
+            android:textColor="#80ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_bonus_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_bonus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:includeFontPadding="false"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/live_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

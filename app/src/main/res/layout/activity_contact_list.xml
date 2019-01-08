@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <com.xgame.ui.activity.invite.view.FastScrollRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginEnd="@dimen/dp_16_7" />
+
+    <com.xgame.ui.activity.invite.view.AlphabetFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="@dimen/dp_16_7"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/layout_toolbar"
+        android:background="@drawable/fast_scroll_bg" />
+
+    <include layout="@layout/layout_empty_view" />
+
+</RelativeLayout>

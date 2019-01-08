@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gap_color"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/personal_toolbar" />
+
+    <include layout="@layout/personal_list_gap" />
+
+    <include
+        layout="@layout/personal_list_item"
+        android:id="@+id/item_avatar"
+        />
+    <include layout="@layout/personal_list_divider" />
+    <include
+        layout="@layout/personal_list_item"
+        android:id="@+id/item_nickname"
+        />
+    <include layout="@layout/personal_list_divider" />
+    <include
+        layout="@layout/personal_list_item"
+        android:id="@+id/item_age"
+        />
+    <include layout="@layout/personal_list_divider" />
+    <include
+        layout="@layout/personal_list_item"
+        android:id="@+id/item_gender"
+        />
+</LinearLayout>

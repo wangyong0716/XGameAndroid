@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/stranger_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_stranger_panel_height"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/stranger_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/default_avatar"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!--优化布局-->
+        <TextView
+            android:id="@+id/stranger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#cc000000"
+            android:layout_marginTop="6.67dp"
+            android:layout_marginStart="9.67dp"
+            android:layout_toEndOf="@+id/stranger_image"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/stranger_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#66000000"
+            android:layout_alignStart="@+id/stranger_name"
+            android:layout_below="@+id/stranger_name"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/stranger_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chat_add_friend_btn"
+            android:textSize="10sp"
+            android:text="@string/chat_hint_add_friend" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_msg_list_bg"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="284.33dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/invite_hint"
+        android:layout_width="347dp"
+        android:layout_height="55.67dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:text="@string/chat_invite_game_hint"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:background="@drawable/chat_invite_hint_bg"
+        android:layout_marginBottom="221dp"/>
+
+    <com.xgame.chat.ui.GamePicker
+        android:id="@+id/game_picker"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

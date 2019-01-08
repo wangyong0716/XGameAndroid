@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/exo_media_title"
+        style="@style/ExoMediaTitle"/>
+    <ImageButton android:id="@+id/exo_replay"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@style/ExoMediaButton.Replay"/>
+    <com.xgame.ui.view.LoadingProgressBar
+        android:id="@+id/exo_loading_progress"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@style/ExoMediaButton.Load"/>
+    <ProgressBar android:id="@+id/exo_mini_time_bar"
+        style="@style/ExoMediaMiniProgressBar"
+        android:layout_gravity="bottom"/>
+</merge>

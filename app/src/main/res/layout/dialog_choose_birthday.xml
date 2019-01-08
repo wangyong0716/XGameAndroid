@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="@string/personal_choose_birthday"
+            style="@style/PopWindowTextStyle"/>
+
+        <com.xgame.uisupport.wheelview.CustomDatePickView
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/complete_btn"
+            android:layout_width="167.33dp"
+            android:layout_height="40.67dp"
+            android:layout_marginTop="9.33dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/positive_btn_bg"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

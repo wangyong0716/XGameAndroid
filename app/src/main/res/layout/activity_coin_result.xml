@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/match_background">
+    <include layout="@layout/share_print_layout" />
+    <LinearLayout
+        android:id="@+id/result_container"
+        android:layout_width="@dimen/coin_result_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/coin_result_layout_margin_top"
+        android:background="@drawable/round_white_rectangle_background"
+        android:paddingTop="@dimen/coin_result_layout_padding_top"
+        android:paddingBottom="@dimen/coin_result_layout_padding_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/coin_battle_result"
+            android:textColor="@color/coin_win_title_color"
+            android:textSize="@dimen/coin_win_title_size"/>
+
+        <TextView
+            android:id="@+id/result_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/coin_result_margin_top"
+            android:text="狂赚200000金币"
+            android:textColor="@color/coin_result_text_color"
+            android:textSize="@dimen/result_text_size"/>
+
+        <TextView
+            android:id="@+id/try_again_btn"
+            android:layout_width="@dimen/result_btn_width"
+            android:layout_height="@dimen/result_btn_height"
+            android:layout_marginTop="39dip"
+            android:background="@drawable/round_yellow_rectangle_background"
+            android:textSize="@dimen/result_text_size"
+            android:textColor="@color/result_black_color"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="handleClick"
+            android:text="@string/play_again"/>
+
+        <TextView
+            android:id="@+id/share_btn"
+            android:layout_width="@dimen/result_btn_width"
+            android:layout_height="@dimen/result_btn_height"
+            android:layout_marginTop="@dimen/result_btn_margin_btn"
+            android:background="@drawable/round_yellow_rectangle_background"
+            android:textSize="@dimen/result_text_size"
+            android:textColor="@color/result_black_color"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="handleClick"
+            android:text="@string/share_for_coin"/>
+
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/result_btn_width"
+            android:layout_height="@dimen/result_btn_height"
+            android:layout_marginTop="@dimen/result_btn_margin_btn"
+            android:background="@drawable/round_yellow_rectangle_background"
+            android:textSize="@dimen/result_text_size"
+            android:textColor="@color/result_black_color"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="handleClick"
+            android:text="@string/back_home"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/result_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coin_battle_win"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35.67dip"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/back_margin_start"
+        android:layout_marginTop="@dimen/back_margin_top"
+        android:src="@drawable/back"/>
+
+</RelativeLayout>

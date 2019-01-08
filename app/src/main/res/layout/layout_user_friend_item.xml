@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg">
+
+    <View
+        android:id="@+id/top_gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_13_3"
+        android:background="@color/invite_divider_gray"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_gap"
+        android:paddingEnd="@dimen/dp_16_7"
+        android:paddingStart="@dimen/dp_16_7">
+
+        <com.miui.zeus.mario.sdk.ui.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_13_3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_13_3"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_13_3"
+            android:layout_toEndOf="@id/avatar"
+            android:layout_toStartOf="@+id/relation_btn"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/normal_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/default_hint_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.xgame.ui.activity.invite.view.RelationButton
+            android:id="@+id/relation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_13_3"
+            android:layout_marginTop="@dimen/dp_13_3"
+            android:gravity="center"
+            app:textColor="@color/default_hint_text_color"
+            app:textSize="@dimen/sp_12" />
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.3"
+            android:layout_alignParentBottom="true"
+            android:background="@color/invite_divider_gray" />
+
+    </RelativeLayout>
+</RelativeLayout>

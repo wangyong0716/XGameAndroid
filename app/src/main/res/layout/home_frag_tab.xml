@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.xgame.ui.activity.home.TabFragment">
+
+    <com.xgame.ui.activity.home.view.RefreshLoadLayout
+        android:id="@+id/refresh_load_layout"
+        android:layout_marginStart="@dimen/dp_11_3"
+        android:layout_marginEnd="@dimen/dp_11_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grid_recycler_view"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.xgame.ui.activity.home.view.RefreshLoadLayout>
+
+    <ViewStub
+        android:id="@+id/vs_alert_layout"
+        android:inflatedId="@+id/alert_layout"
+        android:layout="@layout/home_layout_alert_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

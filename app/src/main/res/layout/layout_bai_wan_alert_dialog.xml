@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="42dp">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_42"
+        android:layout_marginStart="26.67dp"
+        android:layout_marginEnd="26.67dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_negative"
+            android:layout_width="116.67dp"
+            android:layout_height="40dp"
+            android:background="@drawable/negative_btn_bg"
+            android:gravity="center"
+            android:layout_marginEnd="33.33dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="116.67dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bai_wan_positive_btn_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

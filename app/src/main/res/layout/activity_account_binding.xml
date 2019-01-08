@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bind_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="11.33dp"
+        android:background="@drawable/bg_setting_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginStart="26.33dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/mobile_num"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_bind_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:drawableEnd="@drawable/icon_more_topic"
+            android:drawablePadding="10dp"
+            android:text="@string/to_binding"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bind_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_bind_mobile"
+        android:background="@drawable/bg_setting_item"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:layout_marginEnd="13.33dp"
+            android:layout_marginStart="13.33dp"
+            android:background="#26000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginStart="26.33dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/wechat"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_bind_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:drawableEnd="@drawable/icon_more_topic"
+            android:drawablePadding="10dp"
+            android:text="@string/to_binding"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bind_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_bind_wechat"
+        android:background="@drawable/bg_setting_item">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:layout_marginEnd="13.33dp"
+            android:layout_marginStart="13.33dp"
+            android:background="#26000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginStart="26.33dp"
+            android:layout_marginTop="19dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="@string/qq" />
+
+        <TextView
+            android:id="@+id/tv_bind_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="27dp"
+            android:drawableEnd="@drawable/icon_more_topic"
+            android:drawablePadding="10dp"
+            android:text="@string/to_binding"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

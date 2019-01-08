@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dip"
+    android:paddingEnd="13.33dip"
+    android:paddingStart="13.33dip"
+    android:paddingTop="9.67dip">
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingTop="20.33dip"
+        android:paddingStart="16.33dip"
+        android:paddingEnd="16.33dip"
+        android:background="@drawable/round_transparent_rectangle_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="枪神对决"
+            android:textStyle="bold"
+            android:textColor="#ff00c0ff"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/description_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24.67dip"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            android:text="1. 活动主办单位：小米浏览器 \n\n2. 凡自愿参与本活动的，即视为同意本活动规则所述的各项规定。 \n\n3. 活动时间以主办方网络服务器时间为准。 \n\n4．淘宝或天猫用户（以下简称为“用户”）通过扫促销产品二维码，并进入“恒大世界，码上疯狂”活动专区成功参加首次扫码100%中奖活动的，主办方系统自动将该用户判定为“恒大世界，码上疯狂”活动会员。 "/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/join_now"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/result_btn_height"
+        android:layout_marginBottom="18dip"
+        android:layout_marginTop="32.67dip"
+        android:background="@drawable/round_yellow_btn_background"
+        android:gravity="center"
+        android:text="@string/join_now"
+        android:textColor="@color/result_black_color"
+        android:textSize="@dimen/result_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>

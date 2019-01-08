@@ -1,0 +1,7 @@
+如何打渠道包及应用宝重签名
+１．打渠道包：　将渠道信息放入工程下app/channel这个文件里，运行 ./gradlew assembleReleaseChannels　会在app/build/outputs/channels/这个文件夹里生成各种渠道包
+２．由于应用宝会进行加固，加固后需要重签名，所以渠道和签名都需要重新设置。
+   在android工具build-tools下面有zipalign和apksigner工具。
+   １) ./zipalign -f -v 4　{yourname}.apk
+   2) ./apksigner sign -ks {RootProject}/mykeystore {yourname}.apk  运行后会提示输入密码，见keystore.properties文件
+   3) java -jar walle-cli-all.jar put -c {channel} {youname}.apk 　　会生成_channel.apk的文件。

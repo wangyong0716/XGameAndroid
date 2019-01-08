@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#ffffffff</color>
+    <color name="colorAccent">#ffe69310</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="color_7f7f7f">#7f7f7f</color>
+    <color name="color_7f000000">#7f000000</color>
+    <color name="color_b2000000">#b2000000</color>
+    <color name="color_ff8400">#ff8400</color>
+    <color name="color_66ff8400">#66ff8400</color>
+    <color name="color_6e4be6">#6e4be6</color>
+    <color name="color_7f6e4be6">#7f6e4be6</color>
+    <color name="colorDivider">#cccccc</color>
+    <color name="colorBolder">#cccccc</color>
+    <color name="normal_text_color">#cc000000</color>
+    <color name="normal_text__hint_color">#66000000</color>
+
+    <color name="match_game_color">#ccffffff</color>
+    <color name="match_name_color">#cc16172a</color>
+    <color name="match_age_color">#66000000</color>
+    <color name="match_tips_text_color">#80ffffff</color>
+
+    <color name="bw_match_count_text_color">#ffffea00</color>
+
+    <color name="result_black_color">#ff010101</color>
+    <color name="result_yellow_color">#ffffe708</color>
+    <color name="result_green_color">#ff24b543</color>
+
+    <color name="result_text_black_color">#ff010101</color>
+    <color name="result_text_yellow_color">#ffffe708</color>
+
+    <color name="result_score_color">#cc232335</color>
+    <color name="coin_win_title_color">#ffff2433</color>
+    <color name="coin_result_text_color">#99010101</color>
+    <color name="coin_btn_purple_color">#ff7000e3</color>
+
+    <color name="bw_progress_background_color">#ffc8b6ee</color>
+    <color name="bw_progress_foreground_color">#ff4a0cc6</color>
+
+    <!-- personal page -->
+    <color name="toolbar_bg">#28076c</color>
+    <color name="red">#ffff0000</color>
+    <color name="gap_color">#fff7f8fc</color>
+    <color name="dialog_text_color">#5227d8</color>
+    <color name="yellow">#ffd200</color>
+    <color name="yellow_alpha_50">#80ffd200</color>
+    <color name="bill_count">#ff8400</color>
+
+    <!-- home page -->
+    <color name="tab_active_bg">#ffFFE93D</color>
+    <color name="gold_coin_color">#FF8400</color>
+    <color name="link_color">#529AFF</color>
+    <color name="white_alpha_90">#e5ffffff</color>
+    <color name="white_alpha_85">#d8ffffff</color>
+    <color name="white_alpha_80">#ccffffff</color>
+    <color name="white_alpha_70">#b2ffffff</color>
+    <color name="white_alpha_60">#99ffffff</color>
+    <color name="white_alpha_50">#80ffffff</color>
+    <color name="white_alpha_40">#66ffffff</color>
+    <color name="white_alpha_30">#4cffffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="white_alpha_15">#27ffffff</color>
+    <color name="white_alpha_10">#19ffffff</color>
+    <color name="white_alpha_08">#08ffffff</color>
+    <color name="black_alpha_90">#e5000000</color>
+    <color name="black_alpha_85">#d8000000</color>
+    <color name="black_alpha_80">#cc000000</color>
+    <color name="black_alpha_70">#b2000000</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="black_alpha_50">#80000000</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_30">#4c000000</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_15">#27000000</color>
+    <color name="black_alpha_10">#19000000</color>
+    <color name="black_alpha_08">#08000000</color>
+    <!-- end home page -->
+
+    <!-- invite -->
+    <color name="invite_divider_gray">#12000000</color>
+    <color name="invite_match_text_blue">#639AF8</color>
+    <color name="fast_scroll_selected_color">#6F49E6</color>
+
+    <color name="gender_selected_color">#b2000000</color>
+    <color name="gender_unselect_color">#33000000</color>
+    <color name="game_mask_color">#3B505E</color>
+
+    <!-- chat -->
+    <color name="chat_msg_list_bg">#f7f8fc</color>
+    <color name="chat_accept_invite_bg_color">#74cd69</color>
+    <color name="chat_accept_invite_text_color">#fffefe</color>
+    <color name="chat_invite_one_more_text_color">#e14055</color>
+    <color name="tip_bg_color">#A43DEC</color>
+
+    <color name="bw_bonus_color">#fff7316e</color>
+
+</resources>

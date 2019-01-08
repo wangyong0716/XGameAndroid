@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="@color/coin_btn_purple_color"/>
+    <corners android:radius="@dimen/round_btn_corner_radius"/>
+</shape>
